@@ -85,7 +85,7 @@
 	<div class="link"><i class="fa fa-paint-brush"></i>期初<i class="fa fa-chevron-down"></i></div>
 	<ul class="submenu">
 		<li>javascript:doImpo("/base/EstBegiImpoForm.ihtm?type=CLIE","/base/EstBegiImpo.ihtm?type=CLIE");
-			<a href="#">导入客户期初欠款</a>
+			<a id="EstBegiImpoForm"  href="javascript:showWin(['400px', '200px'],'base/EstBegiImpoForm.html');">导入客户期初欠款</a>
 		</li>
 		<li>
 			<a href="#">导入外协商期初欠款</a>
@@ -133,7 +133,7 @@
 				$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
 			};
 		}
-
+		
 		var accordion = new Accordion($('.accordion'), false);
 	});
 </script>
