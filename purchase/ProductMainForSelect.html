@@ -121,7 +121,7 @@
 		}
 	}
 	function doInit(){
-		document.getElementById("mainDiv").style.width=(document.getElementById("mainTd").clientWidth-document.getElementById("navDiv").offsetWidth)+"px";
+		document.getElementById("mainDiv").style.width=(document.getElementById("mainTd").clientWidth-document.getElementById("navDiv").offsetWidth)-80+"px";
 		document.getElementById("mainFrame").src="../base/ProductListForSelect.html?type=&stock=&sto_id=&stoc_type=UPPER_ZERO";
 	}
 	//子窗口调用
@@ -134,7 +134,7 @@
 
 
 <body oncontextmenu="return false" onload="doInit();" class="sheet" style="text-align:center;" scroll="no">
-<div class="sheet-main" style="width:850px; text-align:left;">
+<div class="sheet-main" style="width:1000px; text-align:left;">
 	<div class="sheet-top">
 	  <div class="content">
 	    <h2>选择材料</h2>
@@ -144,10 +144,10 @@
 
 	<div class="sheet-list" id="mainTd" style="height:348px;">
 		
-		<div class="nav" id="navDiv" style="float:left;height:100%;">
+		<div class="nav" id="navDiv" style="float:left;height:100%; ">
 			<iframe width="100%" height="100%" frameborder="0" id="leftFrame" scrolling="no" src="./ProductTypeListForProductSelect.html"></iframe>
 		</div>
-		<div id="mainDiv" class="main search-business" style="float: left; height: 100%; width: 656px;">
+		<div id="mainDiv" class="main search-business" style="float: right; height: 100%; width: 656px;">
 			<iframe width="100%" height="100%" frameborder="0" id="mainFrame" scrolling="no" src="./ProductListForSelect.html"></iframe>
 		</div>
   </div>
